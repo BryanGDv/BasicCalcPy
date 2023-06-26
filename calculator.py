@@ -9,7 +9,6 @@ def add_top_number(num: str, value: str):
 
 
 def operate(operation: str):
-
     if len(operation) == 0:
         return "ERR_EMPTY"
     try:
@@ -100,12 +99,11 @@ def init_project():
                 if result * 10 % 10 == 0:
                     result = int(result)
                 else:
-                    result = result.__round__(3)
+                    result = round(result)
 
             first_num = result
 
             if old_operator == '':
-
                 old_second_num = second_num
                 old_operator = operator
 
@@ -153,7 +151,6 @@ def init_project():
                 old_second_num = None
 
             operator = operation_dict[event[10:13]]
-
 
             operation_line = "{0} {1}".format(first_num, operator)
             window["-RESULT-"].Update(operation_line)
