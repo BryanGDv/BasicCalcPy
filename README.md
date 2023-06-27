@@ -13,5 +13,5 @@ You can try it in a IDE (PyCharm, etc)
 You need to import:
 - PySimpleGUI
 
-### Preview:
+## Preview:
 ![photo](https://i.ibb.co/bLkTtRn/photo.png)
