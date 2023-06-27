@@ -125,10 +125,10 @@ def init_project():
 
             if len(operator) == 0:
                 first_num = add_top_number(first_num, num)
-                operation_line = "{0}".format(first_num)
+                operation_line = f"{first_num}"
             else:
                 second_num = add_top_number(second_num, num)
-                operation_line = "{0} {1} {2}".format(first_num, operator, second_num)
+                operation_line = f"{first_num} {operator} {second_num}"
 
             window["-RESULT-"].Update(operation_line)
             continue
@@ -152,7 +152,7 @@ def init_project():
 
             operator = operation_dict[event[10:13]]
 
-            operation_line = "{0} {1}".format(first_num, operator)
+            operation_line = f"{first_num} {operator}"
             window["-RESULT-"].Update(operation_line)
             continue
     window.close()
